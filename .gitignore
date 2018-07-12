@@ -1,2 +1,5 @@
 #ignore praw.ini file
 praw.ini
+
+#ignore posts_replied_to.txt
+posts_replied_to.txt
