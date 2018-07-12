@@ -19,10 +19,16 @@ def run_bot(reddit):
             posts_replied_to = list(filter(None, posts_replied_to))
     subreddit = reddit.subreddit("test")
     for submission in subreddit.hot(limit = 10):
+        if re.search("the years start coming", submission.title, re.IGNORECASE):
+            #reply to the post even if we have already replied because it's funnier if the years Don't Stop Coming
+            submission.reply("and they don't stop coming")
+            print('Bot replying to', str(submission.author))
+            #remember the post we have replied to
+            posts_replied_to.append(submission.id)
         if submission.id not in posts_replied_to:
-            if re.search("the years start coming", submission.title, re.IGNORECASE):
+            if re.search("somebody once told me", submission.title, re.IGNORECASE):
                 #reply to the post
-                submission.reply("and they don't stop coming")
+                submission.reply("the world was gonna roll me")
                 print('Bot replying to', str(submission.author))
                 #remember the post we have replied to
                 posts_replied_to.append(submission.id)
