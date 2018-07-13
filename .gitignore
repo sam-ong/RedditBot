@@ -3,3 +3,8 @@ praw.ini
 
 #ignore posts_replied_to.txt
 posts_replied_to.txt
+
+#ignore unecessary files
+__pycache__/
+env/
+*.pyc
