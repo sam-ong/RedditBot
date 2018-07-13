@@ -8,3 +8,4 @@ posts_replied_to.txt
 __pycache__/
 env/
 *.pyc
+myvenv/
