@@ -1,2 +1,5 @@
 Django==2.0.7
 pytz==2018.5
+praw=6.0.0
+re=6.2
+time=15.3
