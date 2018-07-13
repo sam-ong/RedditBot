@@ -45,7 +45,9 @@ def main():
     reddit = authenticate()
     while True:
         run_bot(reddit)
-        time.sleep(15)
+        time.sleep(300)
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+    # main()
+
+main()
