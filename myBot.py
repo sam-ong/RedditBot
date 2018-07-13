@@ -8,8 +8,9 @@ subreddits = ["test", "Shrek", "ShrekIsLove", "smashmouth", "Brogres", "Shrekmem
 
 def authenticate():
     print("Authenticating...")
-    reddit = praw.Reddit(user_agent='redditbot 0.1')
-    reddit.login(os.environ['REDDIT_USER'], os.environ['REDDIT_PASS'])
+    reddit = praw.Reddit(user_agent='Reddit test bot v 0.1')
+    # login_info = [os.environ['REDDIT_USERNAME'], os.environ['REDDIT_PASSWORD']]
+    reddit.login(os.environ['REDDIT_USERNAME'],os.environ['REDDIT_PASSWORD'])
     print("Authenticated as {}".format(reddit.user.me()))
     return reddit
 
