@@ -47,7 +47,5 @@ def main():
         run_bot(reddit)
         time.sleep(300)
 
-# if __name__ == '__main__':
-    # main()
-
-main()
+if __name__ == '__main__':
+    main()
